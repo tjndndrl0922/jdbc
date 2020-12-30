@@ -2,6 +2,9 @@ package com.javaex.book01;
 
 import java.util.List;
 
+import com.javaex.book02.AuthorDao;
+import com.javaex.book02.AuthorVo;
+
 public class BookAuthorApp {
 
 	public static void main(String[] args) {
@@ -9,24 +12,24 @@ public class BookAuthorApp {
 		// 작가 6명 등록
 		// AuthorDao, AuthorVo 이용해서 등록
 		
-		BookDao authorDao = new BookDao();
+		AuthorDao authorDao = new AuthorDao();
 
-		BookVo authorVo1 = new BookVo("이문열", "경북 영양");
+		AuthorVo authorVo1 = new AuthorVo("이문열", "경북 영양");
 		authorDao.authorInsert(authorVo1);
 
-		BookVo authorVo2 = new BookVo("박경리", "경상남도 통영");
+		AuthorVo authorVo2 = new AuthorVo("박경리", "경상남도 통영");
 		authorDao.authorInsert(authorVo2);
 
-		BookVo authorVo3 = new BookVo("유시민", "17대 국회의원");
+		AuthorVo authorVo3 = new AuthorVo("유시민", "17대 국회의원");
 		authorDao.authorInsert(authorVo3);
 
-		BookVo authorVo4 = new BookVo("기안84", "기안동에서 산 84년생");
+		AuthorVo authorVo4 = new AuthorVo("기안84", "기안동에서 산 84년생");
 		authorDao.authorInsert(authorVo4);
 
-		BookVo authorVo5 = new BookVo("강풀", "온라인 만화가 1세대");
+		AuthorVo authorVo5 = new AuthorVo("강풀", "온라인 만화가 1세대");
 		authorDao.authorInsert(authorVo5);
-
-		BookVo authorVo6 = new BookVo("김영하", "알뜰신잡");
+		
+		AuthorVo authorVo6 = new AuthorVo("김영하", "알뜰신잡");
 		authorDao.authorInsert(authorVo6);
 	   
 		// (수정, 삭제, 리스트)
